@@ -13,9 +13,9 @@ public class _905{
                 arr[j] = temp;
                 i++;
                 j--;
-            } if(arr[i] % 2 == 0){
+            } if(!((arr[i] & 1) == 1)){
                 i++;
-            } if(arr[j] % 2 != 0){
+            } if((arr[j] & 1) == 1){
                 j--;
             }
         }
