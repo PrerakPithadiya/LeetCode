@@ -5,6 +5,9 @@ public class _1991{
 	}
 	public static int findMiddleIndex(int[] arr){
         int n = arr.length;
+	if(n == 1){
+		return 0;
+	}
         int pref[] = new int[n];
         int suff[] = new int[n];
         createArray(pref, suff, arr);
