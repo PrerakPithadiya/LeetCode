@@ -40,7 +40,7 @@ public class _748 {
         for (int i = 0; i < licPlate.length(); i++) {
             char ch = licPlate.charAt(i);
             if ('a' <= ch && ch <= 'z') {
-                if (licFreq[ch - 97] != freq[ch - 97]) {
+                if (!(licFreq[ch - 97] <= freq[ch - 97])) {
                     Arrays.fill(freq, 0);
                     return false;
                 }
