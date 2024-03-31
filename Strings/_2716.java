@@ -1,6 +1,6 @@
 import java.lang.StringBuilder;
 
-public class Main {
+public class _2716 {
   public static void main(String[] args) {
     String str = "kkkkqdxre";
     System.out.println(minimizedStringLength(str));
