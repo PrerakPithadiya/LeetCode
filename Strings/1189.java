@@ -6,16 +6,12 @@ class Solution {
             char ch = s.charAt(i);
             freq[ch - 97]++;
         }
-        while (true) {
-            if (freq[1] >= 1 && freq[0] >= 1 && freq[11] >= 2 && freq[14] >= 2 && freq[13] >= 1) {
-                freq[1]--;
-                freq[0]--;
-                freq[11] -= 2;
-                freq[14] -= 2;
-                freq[13]--;
-            } else {
-                break;
-            }
+        while (freq[1] >= 1 && freq[0] >= 1 && freq[11] >= 2 && freq[14] >= 2 && freq[13] >= 1) {
+            freq[1]--;
+            freq[0]--;
+            freq[11] -= 2;
+            freq[14] -= 2;
+            freq[13]--;
             count++;
         }
         return count;
